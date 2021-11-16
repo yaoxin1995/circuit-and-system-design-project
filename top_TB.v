@@ -16,7 +16,7 @@ module Top_tb( );
 	reg    [4:0] scan_state;
    
 	//RAM
-	Cov_MEM MEM_i(
+	memory MEM_i(
      .ADR(ADR),
      .DIN(DATA_MEM_WR),
      .DOUT(DATA_MEM_RD),
@@ -26,7 +26,7 @@ module Top_tb( );
    );
 	
 	//DUT
-	Cov_Top DUT(
+	Top DUT(
 		.EDB_I(DATA_MEM_RD),
 		.EAB(ADR),
 		.EDB_O(DATA_MEM_WR),
