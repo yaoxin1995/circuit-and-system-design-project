@@ -247,8 +247,10 @@ module Cov_Controllogic(
                                 EN_DIV = 1'b1; // DIV enable
                                 end
                         LOOP3: begin
+				EN_DIV = 1'b1; // DIV enable
                                 end
                         LOOP4: begin
+				EN_DIV = 1'b1; // DIV enable
                                 end
                         LOOP5: begin
                                 MX_A = 3'b101; //selA 5 DIV<31:0> ->BUSA
@@ -270,9 +272,11 @@ module Cov_Controllogic(
                                 end
 
                         LOOP8: begin
+				EN_DIV = 1'b1; // DIV enable
                                 end
 
                         LOOP9: begin
+				EN_DIV = 1'b1; // DIV enable
                                 end
                         LOOP10: begin
                                 MX_A = 3'b101; //selA 5 DIV-> BUSA
